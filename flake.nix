@@ -25,7 +25,7 @@
     );
   in {
     packages = genSystems (system: {
-      default = pkgsFor.${system}.callPackage ./nix/default.nix { inherit inputs; };
+      default = pkgsFor.${system}.callPackage ./default.nix { inherit inputs; };
     });
   };
 }
